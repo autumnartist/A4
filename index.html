@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 4</small>
+			Persuasive or Deceptive Visualization?
+		</h1>
+
+		<p>
+			<strong>Autumn Artist</strong> — <em>arartist@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+    <h2>Proposition: New York City precincts consistently show higher rates of substantiated use-of-force allegations, which suggests that local policy (amongst other factors) at those precincts contribute to more frequent complaints being upheld.</h2>
+
+		<section>
+      <h3>FOR the Proposition</h3>
+
+      <figure>
+				<img src="img/pro-prop.png" alt="" width="75%"/>
+				<figcaption>
+					Precincts are sorted in descending order of substantiation rate to highlight the top outliers. A different color is used for the precinct with the single highest rate, helping to draw attention to differences.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li>The labeling for the y-axis, I gave it a score of 1.0, mildly earnest. I use a scale of 0-0.8 which is more transparent. Rather than visually inflating small numeric differences the scale I use doesn’t make certain precincts look disproportionately worse. Using this scale instead of a full range of 0 to 1, makes it more visually dramatic but also deceptive.</li>
+				<li>I highlighted the worst precincts in a different color which I gave a score of -0.5, for being mildly manipulative. Using a strong contrast color for the top precinct it draws immediate attention to them. This emphasizes their outlier status thus supporting the claim that many precincts are problematic. An alternative could have been used to use uniform colors for all precincts, however I think this would dilute the message that some precincts stand out.</li>
+				<li>I sorted the bars from highest to lowest rate and gave it a score of +1 which is largely earnest and still persuasive. With this approach there is no data distortion, rather just organization. However it also ensures the first bars you see are dramatic peaks which reinforce the proposition that some of the precincts dominate, but others aren’t far behind. We could have also sorted by precinct number but that wouldn’t make the high-rate precincts less striking.</li>
+				<li>The title I used, “NYC Precincts dominate Substantiated Use-of-Force Allegations”, is mildly manipulative and thus gave it a score of -0.5. The boldness of the title primes viewers to interpret any gap as significant. Calling out certain bars uses emotive language to emphasize this magnitude. A more neutral title, for example “Substantiation Rates by Precinct” would be more objective while reducing persuasive punch.</li>
+			</ul>
+    </section>
+
+    <section>
+      <h3>AGAINST the Proposition</h3>
+
+      <figure>
+				<img src="img/counter-prop.png" alt="" width="75%"/>
+				<figcaption>
+					This bar chart displays the proportion of force-related allegations that were substantiated in each precinct, ranging from 0 to 1, where each bar represents a presinct.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li>I used a y-axis which span the full range, and gave this a score of 1.5, largely earnest. Starting at zero is considered a best practice for bar charts for accurate proportion. However it downplays small differences as it avoids exaggerating them. By truncating the axis, like I did with the pro-proposition, it would make the visualization more dramatic but also deceptive.</li>
+				<li>For the counter-proposition, I used a uniform color palette which conveys a more neutral story. With this pallet, no precinct is singled out. Using this strategy, although outliers are buried, it effectively supports the argument that precincts look similarly overall. Another option could be to color each precinct differently, however the uniform color helps to dampen the perceived differences.</li>
+				<li>For the counter-proposition, I used the title “Substantiated Force Rates Across Precincts” which frames the data as largely uniform. I gave this a score of 0, as it is a neutral choice. It’s neither explicitly dishonest nor entirely neutral and there is no direct numerical misrepresentation. A more neutral alternative could have been “Substantiation Rates by Precinct”, however this wouldn’t push the narrative as effectively.</li>
+			</ul>
+    </section>
+
+    <section>
+      <h2>Final Reflection</h2>
+
+      <p>While creating these visualizations, I found the initial data wrangling, filtering for force allegations, grouping by precinct and calculating substantiation rates, to be relatively straightforward. I started by grouping the total force allegations by precinct then grouped the substantiated force allegations per precinct. Next I computed the substantiation rates by dividing the substantiated force by total force allegations. Lastly, I filtered out precincts with few force allegations, being less than 1. The more challenging decisions came during the visual design face, which was figuring out the chart type, color pallet and axis scaling. I was surprised to see that small changes in labeling or axis scaling could shape a viewer’s perception. In the “pro-proposition” chart, truncating the y-axis, sorting and highlighting one bar changed the story entirely, comparing it to 0-1 range axis and uniform colors.</p>
+	  <p>Ethical analysis and visualization is a combination of fidelity to the data’s underlying truth, transparency about potential biases, and respect for how powerful visual tools can be with shaping beliefs. Although we strive to produce graphics that are visually appealing and compelling, we shouldn’t sacrifice factual accuracy. The boundary between an acceptable persuasive choice and a misleading one depends on whether the visualizations conceals or distorts critical context. If a design choice leads viewers to a conclusion that is untrue or significantly exaggerates the data it crosses into unethical territory. Otherwise thoughtful highlighting or narrative framing can be legitimate ways to help users focus on the key aspects of a dataset.</p>
+    </section>
+	</main>
+</body>
+</html>
